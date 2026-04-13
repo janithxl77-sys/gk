@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <h1>Admin Dashboard</h1>
+    </nav>
+</header>
+
+<section class="admin">
+    <h2>Add / Edit Product</h2>
+    <form id="productForm">
+        <input type="text" id="name" placeholder="Product Name" required>
+        <input type="text" id="size" placeholder="Size" required>
+        <input type="text" id="vehicles" placeholder="Compatible Vehicles" required>
+        <input type="number" id="price" placeholder="Price (LKR)" required>
+        <select id="stock">
+            <option value="In Stock">In Stock</option>
+            <option value="Out of Stock">Out of Stock</option>
+        </select>
+        <input type="file" id="image" accept="image/*" required>
+        <button type="submit" class="btn">Save Product</button>
+    </form>
+
+    <h2>Change Shop Image</h2>
+    <input type="file" id="shopImageInput" accept="image/*">
+</section>
+
+<footer>
+    <p>&copy; 2026 Stainless Steel with Daya Engineering</p>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
